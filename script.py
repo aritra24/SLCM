@@ -97,6 +97,9 @@ class SLCM():
 		self.timeTable = json.loads(timeTable)
 
 	# Gets the first class of the day.
+	def get_time_table(self):
+		self.timeTable = json.loads(timeTable)
+
 	def get_class(self):
 		today = 1+(datetime.today().weekday() + 2)%7
 		self.browser.execute_script('window.stop();')
@@ -122,6 +125,9 @@ class SLCM():
 		print("Do Stuff")
 
 	# Random functions made to make code look less cluttered
+	def attendance(self,subject):
+		print("Do Stuff")
+
 	def load(self, url,id = None,ch = '#'):
 		if id:
 			self.browser.execute_script('window.stop();')
